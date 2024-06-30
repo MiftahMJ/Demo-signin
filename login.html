@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .login-container {
+            display: flex;
+            height: 100vh;
+            background-image: url('https://s3-alpha-sig.figma.com/img/cae4/2d71/56a3ede3643ea6d2adc02c28c803e4e2?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c3~d4CJUVKEPGt3Fgi6KkL5bcTdndWk~k84o4YV9~Vwsb8DKv9-4fpdX5NsKdUSthtDYe0z-tBhGkSbVGyajoa3u6O3clgEJHalq1jCqJNzDBxirFaCZcQyixRiI-A6AufcgApXKu-ydXTzfyV435gl80k0iJ6hSor4xS749fbc8kkAlHCis4BcVcQRzQAAVzVPUz0-RtLOJDYyIi5jmHcs~sSfNagTgtJLONDNZsnV~oaVlPWXgm60xiS-6gijiXv8eLDtWihS-kqNaOmo8jWNi2lRh~X47qeB985F4NEaQYU6mwCMxelkedFOyDFA5SK5Zg1re5jCiqFTtD6FSUQ__');
+            background-size: cover;
+            background-position: center;
+        }
+        .login-card {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 40%; /* Adjusted width */
+            margin-left: auto;
+            margin-right: 2%; /* Margin from the right side */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /* .form-control, .btn-primary {
+            border-radius: 10px;
+        } */
+        .form-control, .btn-primary {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    color: white; /* Text color */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+}
+.form-control:focus, .btn-primary:focus {
+    background-color: rgba(255, 255, 255, 0.1); /* Ensure background remains transparent */
+    border-color: rgba(255, 255, 255, 0.5); /* Ensure border color remains transparent */
+    box-shadow: none; /* Optionally remove box shadow on focus */
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Placeholder text color */
+}
+
+        .card-body {
+            width: 100%;
+        }
+        .sign-up {
+            margin-top: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="card login-card">
+            <div class="card-body">
+                <h5 class="card-title text-center">Login to your Account</h5>
+                <form>
+                    <div class="form-group mt-5">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="pssword">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Keep me logged in</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                    <div class="text-center sign-up">
+                        <a href="#" class="text-white ">Don't have an account? Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
